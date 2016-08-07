@@ -1,0 +1,21 @@
+dataLayer.push({										// This code must be loaded in the page load event
+    'event': 'checkout',
+        'ecommerce': {
+        'checkout': {
+            'actionField': {
+                'step': 1,								// Step number of Checkout
+				'option': 'Checkout'					// Step name of Checkout
+            },
+                'products': [{							// Array of all products that are in cart and being checked out
+                'id': 'P12345', 						// Product ID (string).
+                'name': 'Android Warhol T-Shirt', 		// product name: clear double quotes from the name (')
+                'category': 'Apparel', 					// Category: Phones, Packages, etc...
+                'brand': 'Google', 						// Product brand (string).
+                'variant': 'black', 					// For cellular Phones:Color; for "חבילות חול" : [Destination Place] - Dynamic (string).
+                'price': '29.20', 						// Product price
+                'position': 0,							// Product position (number)- מיקום של פריט בעמוד : כאשר ספירה מימין לשמאל עבור כל שורה 
+                'quantity': 1 							// Product quantity (number).
+            }]
+        }
+    }
+});

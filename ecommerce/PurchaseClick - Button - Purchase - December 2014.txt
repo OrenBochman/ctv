@@ -1,0 +1,25 @@
+dataLayer.push({							// This code must be loaded in the page load event
+  "event": "transaction",
+  "ecommerce": {
+    "purchase": {
+      "actionField": {
+        "id": "T12345", 					// Transaction ID. Required for purchases and refunds.
+        "affiliation": "Online Store",
+        "revenue": "35.43", 				// Total transaction value (incl. tax and shipping)
+        "tax": "4.90",
+        "shipping": "5.99",
+        "coupon": "SUMMER_SALE"
+      },
+      "products": [{
+        "id": "P12345", 					// Product ID (string).
+        "name": "Android Warhol T-Shirt", 	// product name: clear quotes from the name (")
+        "category": "Apparel", 				// Category: Phones, Packages, etc...
+        "brand": "Google", 					// Product brand (string).
+        "variant": "black", 				// For cellular Phones:Color; for "çلéىهْ çهى" : [Destination Place] - Dynamic (string).
+        "price": "29.20", 					// Product price 
+        "position": 0,						// Product position (number)- îé÷هي ùى ôّéè لٍîهم : ëàùّ ٌôéّن îéîéï ىùîàى ٍلهّ ëى ùهّن 
+        "quantity": 1 						// Product quantity (number).
+      }]
+    }
+  }
+});

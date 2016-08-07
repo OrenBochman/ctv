@@ -1,0 +1,1 @@
+// Same as in "Impression - All Products - December 2014", only with one product in the products array

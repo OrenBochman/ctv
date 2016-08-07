@@ -1,0 +1,12 @@
+dataLayer.push({						// This code must be loaded in the page load event
+ "event": "checkout",
+  "ecommerce": {
+    "checkout": {
+      "actionField": {
+        "step": 5,						// Step number of Checkout
+		"option": "Thank you"			// Step name of Checkout
+      },
+      "products": []
+    }
+  }
+});
